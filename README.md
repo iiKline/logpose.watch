@@ -3,6 +3,7 @@
 A sleek, fully offline-capable Progressive Web App (PWA) designed to log the grand voyage from Romance Dawn all the way to Elbaf and beyond. 
 
 Built by **Karan**.
+Maintained by **Kline**.
 
 ## ✨ Features
 
