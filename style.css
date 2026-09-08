@@ -1279,6 +1279,17 @@
     .arc-item.type-canon.unlocked                { border-color: rgba(240, 168, 50, .12); opacity: .72; }
     .arc-item.type-canon.unlocked::before        { background: rgba(240, 168, 50, .25); }
     .arc-item.type-canon.ongoing                 { opacity: 1; }
+    .arc-item.type-canon.ongoing.current { border-color: #39ff88; background-color: rgba(57, 255, 136, .06); box-shadow: 0 0 0 1px rgba(57, 255, 136, .45), 0 0 22px rgba(57, 255, 136, .25); animation: ongoing-current-pulse 2.5s ease-in-out infinite; }
+
+@keyframes ongoing-current-pulse {
+  0%, 100% {
+    background-color: rgba(57, 255, 136, .04);
+  }
+
+  50% {
+    background-color: rgba(57, 255, 136, .16);
+  }
+}
 
     /* Filler states */
     .arc-item.type-filler                        { border-color: rgba(128, 80, 204, .18); }
@@ -1300,26 +1311,7 @@
     .arc-item.type-filler.unlocked::before       { background: rgba(128, 80, 204, .35); }
 
     /* Ongoing */
-    .arc-item.ongoing                            { border-color: rgba(57, 255, 136, .8); background: rgba(57, 255, 136, .07); box-shadow: 0 0 0 1px rgba(57, 255, 136, .35), 0 0 18px rgba(57, 255, 136, .25), 0 0 34px rgba(57, 255, 136, .12); animation: ongoing-arc-pulse 2.5s ease-in-out infinite; }
-    .arc-item.ongoing::before                    { background: #39ff88; width: 4px; box-shadow: 0 0 10px #39ff88; }
-
-    @keyframes ongoing-arc-pulse {
-      0%, 100% {
-        border-color: rgba(57, 255, 136, .55);
-        box-shadow:
-          0 0 0 1px rgba(57, 255, 136, .22),
-          0 0 14px rgba(57, 255, 136, .18),
-          0 0 28px rgba(57, 255, 136, .08);
-      }
-
-      50% {
-        border-color: rgba(57, 255, 136, 1);
-        box-shadow:
-          0 0 0 1px rgba(57, 255, 136, .65),
-          0 0 24px rgba(57, 255, 136, .45),
-          0 0 45px rgba(57, 255, 136, .2);
-      }
-    }
+    .arc-item.ongoing                            { border-color: rgba(57, 255, 136, .8); background: var(--panel); box-shadow: 0 0 0 1px rgba(57, 255, 136, .35), 0 0 18px rgba(57, 255, 136, .25), 0 0 34px rgba(57, 255, 136, .12); }
 
     /* Upcoming */
     .arc-item.type-upcoming                      { border-color: rgba(61, 143, 255, .18); opacity: .55; }
@@ -1334,6 +1326,7 @@
     .arc-item.ongoing.locked                          { opacity: 1; background: var(--panel); }
     .arc-item.ongoing.locked .arc-title               { color: var(--white); }
     .arc-item.unlocked                                { cursor: pointer; }
+    .arc-item.ongoing:hover { border-color: rgba(57, 255, 136, 1); }
 
     .arc-meta       { flex: 1; }
 
