@@ -15,7 +15,7 @@ function fetchWithTimeout(url, options = {}, ms = 6000) {
 
 export async function fetchTotalEpisodes() {
   // Clear any previous status while we attempt the fetch.
-  // We intentionally show nothing on failure — the fallback value (1168) is
+  // We intentionally show nothing on failure — the fallback value (last manually verified aired episode) is
   // the correct known total, so displaying an "offline" warning would just be
   // noise for users in sandboxed / restricted-network environments.
   setFetchStatus('', '');
@@ -60,7 +60,7 @@ export async function fetchTotalEpisodes() {
   } catch (_) { /* both sources unreachable — fall through to silent fallback */ }
 
   // ── 3. Both APIs unreachable ──────────────────────────────────────────────
-  // FALLBACK_TOTAL is the verified correct value (1168 as of Dec 2025).
+  // FALLBACK_TOTAL is the last manually verified aired episode count.  
   // We silently use it — no error banner needed since the data is accurate.
   state.totalEps = FALLBACK_TOTAL;
   updateTotalDependentUI();

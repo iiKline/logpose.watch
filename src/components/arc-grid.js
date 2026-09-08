@@ -348,7 +348,8 @@ function updateFillerButtons(node, a) {
 /** Patch only the dynamic parts of an existing arc node. */
 function patchArcNode(node, a, st, pg) {
   // Status classes
-  const base = `arc-item type-${a.type}`;
+  const isOngoing = a.eps[1] === null && a.type === 'canon';
+  const base = `arc-item type-${a.type}${isOngoing ? ' ongoing' : ''}`;
   const cls  = st === 'completed' ? `${base} completed`
              : st === 'current'   ? `${base} current`
              : st === 'unlocked'  ? `${base} unlocked`
