@@ -1,6 +1,6 @@
 {
-  "name": "One Piece Journey Tracker",
-  "short_name": "OP Journey",
+  "name": "Log Pose — One Piece Journey Tracker",
+  "short_name": "Log Pose",
   "description": "Track your One Piece watching journey — arcs, filler, and the road to Elbaf.",
   "start_url": "./index.html",
   "scope": "./",

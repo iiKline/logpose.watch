@@ -13,7 +13,7 @@ import { loadState, saveState } from './state/persistence.js';
 import { trySetEpisode, tryWatchNext } from './state/mutations.js';
 
 // ── Utils Imports ─────────────────────────────────────────────────────────
-import { fetchTotalEpisodes } from './utils/api.js';
+import { fetchTotalEpisodes, fetchAiringSchedule } from './utils/api.js';
 import { updateCountdown } from './utils/date.js';
 import { exportSave, importSave } from './utils/export-import.js';
 import { customSmoothScroll, centerElementSmart } from './utils/scroll.js';
@@ -531,6 +531,12 @@ initInfoButton();
 updateCountdown();
 setInterval(updateCountdown, 1000);
 fetchTotalEpisodes();
+fetchAiringSchedule();
+
+setInterval(() => {
+  fetchTotalEpisodes();
+  fetchAiringSchedule();
+}, 30 * 60 * 1000);
 
 // Global exports for HTML handlers
 window.adjustEp = adjustEp;

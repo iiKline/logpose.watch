@@ -3,7 +3,7 @@
 /* ═══════════════════════════════════════════════════════════════════════════
    STATE
    ═══════════════════════════════════════════════════════════════════════════ */
-const ELBAF_DATE     = new Date('2026-04-05T07:15:00-07:00'); // JST premiere
+/* const ELBAF_DATE     = new Date('2026-04-05T07:15:00-07:00'); // JST premiere */
 const FALLBACK_TOTAL = 1168;  // used until API responds
 
 export const state = {
@@ -13,6 +13,8 @@ export const state = {
   timelineView:   'all',      // 'all' | 'unwatched' | 'watched'
   seriesView:     'all',      // 'all' | 'canon' | 'filler' | 'ongoing'
   totalEps:       FALLBACK_TOTAL,
+  nextEpisode:    null,
+  nextAiringAt:   null,
   searchQuery:    '',
   watchedMovies:   new Set(),  // Set of movie ids marked watched
   watchedFillers:  new Set(),  // Set of filler arc names explicitly watched
@@ -30,4 +32,4 @@ export const state = {
   hideWatchedSpecials: false,
 };
 
-export { ELBAF_DATE, FALLBACK_TOTAL };
+export { FALLBACK_TOTAL };

@@ -8,7 +8,7 @@
  * so the old cache is pruned automatically on the next visit.
  */
 
-const CACHE_VERSION = 'op-tracker-v1.92';
+const CACHE_VERSION = 'op-tracker-v1.93';
 const CACHE_NAME = CACHE_VERSION;
 let hasNotifiedRuntimeUpdate = false;
 
@@ -57,7 +57,7 @@ const APP_SHELL = [
  * render offline after the first visit.
  */
 const OPTIONAL_CACHE = [
-  'https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&display=swap',
+  'https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Outfit:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap',
 ];
 
 /* ── Install ──────────────────────────────────────────────────────────────────

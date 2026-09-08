@@ -4512,6 +4512,7 @@
 .notes-title { margin-bottom: 0; }
 .footer-buttons { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
 .footer-link { text-decoration: none; width: 100%; text-align: center; margin-top: 4px; }
+.footer-links { display: flex; flex-direction: column; align-items: center; gap: 2px; }
 .footer-credit { width: 100%; text-align: center; margin-top: 8px; font-size: 9px; opacity: 0.6; }
 .progress-current-bar { width: 0%; }
 .btn-reset-danger { background: linear-gradient(135deg, var(--red), #8b1a1a); }

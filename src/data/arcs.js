@@ -28,7 +28,7 @@ export const ARCS = [
   { name: 'Ruluka Island',      saga: 'Skypiea',           eps: [139,  143 ], icon: '🌈',  type: 'filler',  note: 'Skippable' },
   { name: 'Jaya',               saga: 'Skypiea',           eps: [144,  152 ], icon: '🏝️',  type: 'canon'    },
   { name: 'Skypiea',            saga: 'Skypiea',           eps: [153,  195 ], icon: '☁️',  type: 'canon'    },
-  { name: 'G-8',                saga: 'Skypiea',           eps: [196,  206 ], icon: '🪖',  type: 'filler',  note: '⭐ Fan-favourite — one of the best filler arcs ever' },
+  { name: 'G-8',                saga: 'Skypiea',           eps: [196,  206 ], icon: '🪖',  type: 'filler',  note: '⭐ Fan-favorite — one of the best filler arcs ever' },
 
   // ── Water 7 Saga ──────────────────────────────────────────────────────────
   { name: 'Long Ring Long Land',saga: 'Water 7',           eps: [207,  219 ], icon: '🦒',  type: 'canon',   note: 'Eps 213–216 are filler within' },
@@ -76,7 +76,6 @@ export const ARCS = [
 
   // ── Final Saga ────────────────────────────────────────────────────────────
   { name: 'Egghead',            saga: 'Final Saga',        eps: [1086, 1155], icon: '🤖',  type: 'canon',   },
-  { name: 'Elbaf',     saga: 'Final Saga',        eps: [1156, null], icon: '🏔️',  type: 'canon',    note: 'Part 1' },
+  { name: 'Elbaf',              saga: 'Final Saga',        eps: [1156, null], icon: '🏔️',  type: 'canon',    note: 'Part 2 ongoing · Part 1: Episodes 1156–1168' },
 
-  // { name: 'Elbaf — Part 2',     saga: 'Final Saga',        eps: [1169, null], icon: '🏔️',  type: 'upcoming', note: '⚡ Returning September 2026' },
 ];

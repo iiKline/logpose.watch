@@ -1,15 +1,15 @@
-# 🏴‍☠️ One Piece Journey Tracker
+# 🏴‍☠️ Log Pose — One Piece Journey Tracker
 
 A sleek, fully offline-capable Progressive Web App (PWA) designed to log the grand voyage from Romance Dawn all the way to Elbaf and beyond. 
 
 Built by **Karan**.
-Maintained by **Kline**.
+Log Pose fork maintained by **Kline**.
 
 ## ✨ Features
 
 * **Complete Offline Support:** Installed directly to the home screen as a PWA using a custom Service Worker. It works flawlessly without an internet connection.
 * **Dynamic Episode Fetching:** Automatically pulls the latest total aired episode count using the Jikan API (MyAnimeList), with a resilient GraphQL fallback to AniList.
-* **Local First & Secure:** All progress and Captain's Log notes are saved instantly to the browser's `localStorage`. No accounts, no servers, no tracking.
+* **Local First & Secure:** All progress and Captain's Log notes are saved instantly to the browser's `localStorage`. No accounts, no servers.
 * **Save Backups:** Full JSON Export and Import functionality to safely back up your journey or migrate to a new device.
 * **Smart UI/UX:** Features a live countdown to upcoming arcs (like Elbaf), smooth CSS GPU-accelerated wave animations, text-based arc searching, and keyboard/screen-reader accessibility.
 
