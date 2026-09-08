@@ -1278,6 +1278,7 @@
     .arc-item.type-canon.current::before         { background: var(--gold); width: 4px; }
     .arc-item.type-canon.unlocked                { border-color: rgba(240, 168, 50, .12); opacity: .72; }
     .arc-item.type-canon.unlocked::before        { background: rgba(240, 168, 50, .25); }
+    .arc-item.type-canon.ongoing                 { opacity: 1; }
 
     /* Filler states */
     .arc-item.type-filler                        { border-color: rgba(128, 80, 204, .18); }
@@ -1330,6 +1331,8 @@
     .arc-item.type-canon:hover:not(.locked)           { border-color: rgba(240, 168, 50, .3); }
     .arc-item.type-filler:hover:not(.locked)          { border-color: rgba(128, 80, 204, .38); }
     .arc-item.locked:not(.type-upcoming)              { opacity: .35; cursor: default; }
+    .arc-item.ongoing.locked                          { opacity: 1; background: var(--panel); }
+    .arc-item.ongoing.locked .arc-title               { color: var(--white); }
     .arc-item.unlocked                                { cursor: pointer; }
 
     .arc-meta       { flex: 1; }
