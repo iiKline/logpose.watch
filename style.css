@@ -381,12 +381,14 @@
       background: linear-gradient(90deg, transparent, var(--cyan), transparent);
     }
 
-    .skull-icon {
-      font-size:     56px;
-      display:       block;
-      margin-bottom: 12px;
-      filter:        drop-shadow(0 0 16px rgba(0, 229, 212, 0.4));
-      animation:     float 5s ease-in-out infinite;
+    .header-logo {
+      display: block;
+      width: 150px;
+      height: 150px;
+      margin: 0 auto 12px;
+      object-fit: contain;
+      filter: drop-shadow(0 0 12px rgba(0, 229, 212, 0.4));
+      animation: float 5s ease-in-out infinite;
     }
 
     @keyframes float {
@@ -4135,10 +4137,6 @@
     @media (max-width: 500px) {
       header {
         padding: 38px 0 24px;
-      }
-      .skull-icon {
-        font-size: 42px;
-        margin-bottom: 8px;
       }
       h1 {
         font-size: 26px;
