@@ -504,7 +504,7 @@ document.addEventListener('DOMContentLoaded', function initBottomSheet() {
     }
 
     const done = _getProgressArcs();
-    if (count) count.textContent = done.length + ' arc' + (done.length === 1 ? ' arc' : ' arcs');
+    if (count) count.textContent = done.length + (done.length === 1 ? ' arc' : ' arcs');
     if (activeCategory === 'arcs') renderPanelArcs(body, done);
     else                            renderPanelSagas(body, done);
   }
