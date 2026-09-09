@@ -47,12 +47,12 @@ export function updateCountdown() {
 
   if (days > 0) {
     label.textContent =
-      `Next: Ep ${state.nextEpisode} in ${days}d ${hours}h ${minutes}m`;
+      `Next episode in: ${days}d ${hours}h ${minutes}m`;
   } else if (hours > 0) {
     label.textContent =
-      `Next: Ep ${state.nextEpisode} in ${hours}h ${minutes}m ${seconds}s`;
+      `Next episode in: ${hours}h ${minutes}m ${seconds}s`;
   } else {
     label.textContent =
-      `Next: Ep ${state.nextEpisode} in ${minutes}m ${seconds}s`;
+      `Next episode in: ${minutes}m ${seconds}s`;
   }
 }
