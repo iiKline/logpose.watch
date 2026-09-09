@@ -8,7 +8,7 @@
  * so the old cache is pruned automatically on the next visit.
  */
 
-const CACHE_VERSION = 'op-tracker-v1.93';
+const CACHE_VERSION = 'op-tracker-v1.2.5';
 const CACHE_NAME = CACHE_VERSION;
 let hasNotifiedRuntimeUpdate = false;
 
