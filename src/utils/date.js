@@ -2,7 +2,7 @@
 
 import { state } from '../state/state.js';
 
-const ELBAF_PART_2_END = 1181;
+const ELBAF_PART_2_END = '...';
 
 export function updateCountdown() {
   const sub   = document.querySelector('.elbaf-banner-sub');
