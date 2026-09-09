@@ -27,7 +27,7 @@ export function updateCountdown() {
 
   // AniList schedule unavailable — retain useful static info.
   if (!state.nextEpisode || !state.nextAiringAt) {
-    label.textContent = `Expected through Episode ${ELBAF_PART_2_END}`;
+    label.textContent = `Loading: ...`;
     return;
   }
 

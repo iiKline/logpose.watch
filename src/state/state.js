@@ -3,7 +3,7 @@
 /* ═══════════════════════════════════════════════════════════════════════════
    STATE
    ═══════════════════════════════════════════════════════════════════════════ */
-const FALLBACK_TOTAL = 1168;  // used until API responds
+const FALLBACK_TOTAL = 'Loading...';  // used until API responds
 
 export const state = {
   episode:        0,
